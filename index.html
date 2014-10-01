@@ -5,12 +5,36 @@
 	<style>
 		header {
 			text-align: center;
+			background: url("images/bgimg2.png");
+			background-size: cover;
 		}
 		body {
 			text-align: center;
 			background: black;
 			color: white;
 			font-family: helvetica;
+		}
+		img {
+			margin: 40px 0px 0px 0px;
+			border: 7px solid white;
+			background: rgba(0, 0, 0, 0.8);
+			border-radius: 20px;
+		}
+		img:hover {
+			background: rgba(0, 0, 0, 1);
+		}
+		a {
+			color: white;
+			font-size: 22px;
+		}
+		ul {
+			padding: 10px;
+			background: rgba(0, 0, 0, 0.7);
+		}
+		li {
+			display: inline;
+			padding: 10px;
+			background: rgba(150, 0, 0, 1);
 		}
 		p {
 			font-size: 22px;
@@ -20,6 +44,10 @@
 			padding: 10px;
 			font-size: 18px;
 		}
+		input[type="email"] {
+			color:black;
+			background: white;
+		}
 		input[type="submit"] {
 			color: white;
 			background: blue;
@@ -27,7 +55,13 @@
 	</style>
 </head>
 <body>
-	<img src="websitelogo.png">
+	<header>
+	<a href=""><img src="images/websitelogo.png" alt="Logo"></a>
+	<ul>
+		<li><a href="#">Who Am I?</a></li>
+		<li><a href="#">Contact Me</a></li>
+	</ul>
+	</header>
 	<p>Hello there! I'm Newman, a University of Texas at Austin student majoring in Economics and Psychology.</p>
 	<p>This is currently under construction!</p>
 	<input type="email" placeholder="Your email">
