@@ -17,14 +17,12 @@
 		}
 		img {
 			margin: 75px 0px 50px 0px;
-			border: 7px solid gray;
-			background: rgba(200, 200, 200, 0.5);
-			border-radius: 20px;
+			border: 7px solid rgba(200, 200, 200, 1);
 		}
 		img:hover {
-			background: rgba(50, 50, 50, 1);
-			background: -webkit-linear-gradient(bottom, rgba(50, 50, 50, 1), rgba(150, 150, 150, 1));
-			background: -moz-linear-gradient(bottom, rgba(50, 50, 50, 1), rgba(150, 150, 150, 1));
+			border: 7px solid rgba(180, 180, 180, 1);
+			background: rgba(220, 220, 220, 1);
+			border-radius: 20px;
 		}
 		a {
 			color: white;
@@ -34,6 +32,7 @@
 		ul {
 			padding: 20px;
 			background: rgba(25, 25, 25, 1);
+			border-radius: 100px 100px 0 0;
 		}
 		li {
 			display: inline;
@@ -69,6 +68,10 @@
 			color: white;
 			background: blue;
 		}
+		footer {
+			text-align: right;
+			padding: 10px;
+		}
 
 		.first{
 			background-color: black;
@@ -79,28 +82,33 @@
 		}
 		.third{
 			background-image: url("images/psychbg.png");
-			opacity: 0.1;
-			color: white;
+			color: black;
 		}
 		.fourth{
 			background-color: rgba(150, 150, 150, 1);
 			color: black;
+		}
+		.fifth{
+			background-color: rgba(25, 25, 25, 1);
+			border-radius: 0 0 100px 100px;
+			height: 250px;
 		}
 
 	</style>
 </head>
 <body>
 	<header>
-	<a href=""><img src="images/websitelogo.png" alt="Logo"></a>
+	<a href=""><img src="images/websitelogo.png" alt="logo"></a>
 	<ul>
-		<li><a href="#">Who Am I?</a></li>
-		<li><a href="#">Contact Me</a></li>
+		<li><a href="#first">Who Am I?</a></li>
+		<li><a href="#fourth">Contact Me</a></li>
 	</ul>
 	</header>
 
 	<div class="first">
+		<a name="first">
 		<p>Who Am I?<br /><br />
-		Hello there! I'm Newman, a University of Texas at Austin student majoring in Economics and Psychology. With these majors, I aspire to become a Marketing Research Analyst.</p>
+		Hello there! I'm Newman, a University of Texas at Austin student majoring in Economics and Psychology.</p>
 	</div>
 
 	<div class="second">
@@ -112,9 +120,17 @@
 	</div>
 
 	<div class="fourth">
+		<a name="fourth">
 		<p>Contact Me</p>
 		<input type="email" placeholder="Your email">
 		<input type="submit">
 		<p><a href="https://www.dropbox.com/s/w0ipi89sdx3wwh9/resume.docx?dl=0">R&#233;sum&#233;</a></p>
 	</div>
+	<div class="fifth">
+		<a href=""><img src="images/phonebutton.png" alt="button"></a>
+	</div>
+
+	<footer>
+	&copy; Newman Liu
+	</footer>
 </body>
