@@ -5,39 +5,56 @@
 	<style>
 		header {
 			text-align: center;
-			background: url("images/bgimg2.png");
-			background-size: cover;
+			background: rgba(200, 200, 200, 1);
 		}
 		body {
 			text-align: center;
-			background: black;
+			background: rgba(200, 200, 200, 1);
 			color: white;
-			font-family: helvetica;
+			font-family: helvetica, sans-serif;
+			margin: 0 auto;
+			max-width: 1200px;
 		}
 		img {
-			margin: 40px 0px 0px 0px;
-			border: 7px solid white;
-			background: rgba(0, 0, 0, 0.8);
+			margin: 75px 0px 50px 0px;
+			border: 7px solid gray;
+			background: rgba(200, 200, 200, 0.5);
 			border-radius: 20px;
 		}
 		img:hover {
-			background: rgba(0, 0, 0, 1);
+			background: rgba(50, 50, 50, 1);
+			background: -webkit-linear-gradient(bottom, rgba(50, 50, 50, 1), rgba(150, 150, 150, 1));
+			background: -moz-linear-gradient(bottom, rgba(50, 50, 50, 1), rgba(150, 150, 150, 1));
 		}
 		a {
 			color: white;
 			font-size: 22px;
+			text-decoration: none;
 		}
 		ul {
-			padding: 10px;
-			background: rgba(0, 0, 0, 0.7);
+			padding: 20px;
+			background: rgba(25, 25, 25, 1);
 		}
 		li {
 			display: inline;
-			padding: 10px;
-			background: rgba(150, 0, 0, 1);
+			padding: 8px 5px 5px 5px;
+			margin: 20px;
+			border: 2px solid rgba(150, 0, 0, 1);
+			border-radius: 6px;
+		}
+		li:hover {
+			background: rgba(130, 0, 0, 1);
+		}
+		div {
+			text-align: center;
+			height: 500px;
+			background-size: cover;
 		}
 		p {
 			font-size: 22px;
+			padding: 80px 0 0 0;
+			line-height: 42px;
+			margin: 0 200px;
 		}
 		input {
 			border: 0;
@@ -52,6 +69,24 @@
 			color: white;
 			background: blue;
 		}
+
+		.first{
+			background-color: black;
+			background-image: url("images/introbg.png");
+		}
+		.second{
+			background-image: url("images/econbg.png");
+		}
+		.third{
+			background-image: url("images/psychbg.png");
+			opacity: 0.1;
+			color: white;
+		}
+		.fourth{
+			background-color: rgba(150, 150, 150, 1);
+			color: black;
+		}
+
 	</style>
 </head>
 <body>
@@ -62,9 +97,24 @@
 		<li><a href="#">Contact Me</a></li>
 	</ul>
 	</header>
-	<p>Hello there! I'm Newman, a University of Texas at Austin student majoring in Economics and Psychology.</p>
-	<p>This is currently under construction!</p>
-	<input type="email" placeholder="Your email">
-	<input type="submit">
-	<p><a href="https://www.dropbox.com/s/w0ipi89sdx3wwh9/resume.docx?dl=0">R&#233;sum&#233;</a></p>
+
+	<div class="first">
+		<p>Who Am I?<br /><br />
+		Hello there! I'm Newman, a University of Texas at Austin student majoring in Economics and Psychology. With these majors, I aspire to become a Marketing Research Analyst.</p>
+	</div>
+
+	<div class="second">
+		<p>Economics</p>
+	</div>
+
+	<div class="third">
+		<p>Psychology</p>
+	</div>
+
+	<div class="fourth">
+		<p>Contact Me</p>
+		<input type="email" placeholder="Your email">
+		<input type="submit">
+		<p><a href="https://www.dropbox.com/s/w0ipi89sdx3wwh9/resume.docx?dl=0">R&#233;sum&#233;</a></p>
+	</div>
 </body>
