@@ -17,9 +17,8 @@
 			margin: 0 auto;
 		}
 		a {
-			color: white;
-			font-size: 22px;
 			text-decoration: none;
+			color: white;
 		}
 		ul {
 			padding: 20px;
@@ -29,9 +28,10 @@
 		}
 		li {
 			display: inline;
-			padding: 10px 7px 7px 7px;
+			padding: 7px;
 			margin: 20px;
 			border-radius: 6px;
+			font-size: 22px;
 		}
 		li:hover {
 			background: rgba(50, 50, 50, 1);
@@ -58,8 +58,9 @@
 			font-size: 26px;
 			padding: 50px;
 			line-height: 42px;
-			margin: 0 200px;
-			text-align: center;
+			margin: 0 auto;
+			max-width: 720px;
+			text-align: justify;
 		}
 		input {
 			border: 0;
@@ -89,8 +90,24 @@
 		.third{
 			background-color: rgba(45, 62, 63, 1);
 		}
-		.fourth{
+		.fifth{
 			background-color: rgba(100, 137, 140, 1);
+		}
+
+		@media (max-width: 600px) {
+			ul {
+				padding: 0;
+			}
+			li {
+				margin: 5px;
+				font-size: 18px;
+			}
+			h3{
+				font-size: 36px;
+			}
+			p {
+				font-size: 22px;
+			}
 		}
 	</style>
 </head>
@@ -98,7 +115,7 @@
 	<header>
 	<ul>
 		<li><a href="#first" class="smoothScroll">Who Am I?</a></li>
-		<li><a href="#fourth" class="smoothScroll">Contact Me</a></li>
+		<li><a href="#fifth" class="smoothScroll">Contact Me</a></li>
 	</ul>
 	<h1>hi, my name is</h1>
 	<h2>Newman Liu</h2>
@@ -109,23 +126,32 @@
 	<div class="first">
 		<a name="first">
 		<h3>Who Am I?</h3>
-		<p>Hello there! I'm Newman, a University of Texas at Austin student majoring in Economics and Psychology.</p>
+		<p>Hello there! I'm Newman, a University of Texas at Austin student majoring in <a href="#second" class="smoothScroll">Economics</a> and <a href="#third" class="smoothScroll">Psychology</a>. I will be graduating in May 2015 with a Bachelor of Arts in both fields. I have a deep interest in human behavior, especially regarding microeconomic consumer choice. I love chatting with people about basically anything, so please feel free to email me or contact me!</p>
 	</div>
 
 	<div class="second">
-		<h3>Economics</h3>
+	<a name="economics">
+		<h3>Why Economics?</h3>
 	</div>
 
 	<div class="third">
-		<h3>Psychology</h3>
+	<a name="psychology">
+		<h3>Why Psychology?</h3>
 	</div>
 
 	<div class="fourth">
-		<a name="fourth">
+	<a name="current">
+		<h3>Currently Working On</h3>
+	</div>
+
+	<div class="fifth">
+		<a name="fifth">
 		<h3>Contact Me</h3>
 		<input type="email" placeholder="Your email">
-		<input type="submit">
-		<p><a href="https://www.dropbox.com/s/w0ipi89sdx3wwh9/resume.docx?dl=0">R&#233;sum&#233;</a></p>
+		<form method="post" action="mailto:newman.liu@utexas.edu" >
+		<input type="submit" value="Submit" />
+		</form>
+		<h3><a href="https://www.dropbox.com/s/w0ipi89sdx3wwh9/resume.docx?dl=0">R&#233;sum&#233;</a></h3>
 	</div>
 	<footer>
 	&copy; Newman Liu
