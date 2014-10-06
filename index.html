@@ -17,8 +17,14 @@
 			margin: 0 auto;
 		}
 		a {
-			text-decoration: none;
 			color: white;
+		}
+		li > a {
+			text-decoration: none;
+		}
+		a, img {
+			border: none;
+			outline: none;
 		}
 		ul {
 			padding: 20px;
@@ -117,8 +123,8 @@
 <body>
 	<header>
 	<ul>
-		<li><a href="#first" class="smoothScroll">Who Am I?</a></li>
-		<li><a href="#fifth" class="smoothScroll">Contact Me</a></li>
+		<li><a href="#about" class="smoothScroll">Who Am I?</a></li>
+		<li><a href="#contact" class="smoothScroll">Contact Me</a></li>
 	</ul>
 	<h1>hi, my name is</h1>
 	<h2>Newman Liu</h2>
@@ -127,9 +133,9 @@
 	</header>
 
 	<div class="first">
-		<a name="first">
+		<a name="about">
 		<h3>Who Am I?</h3>
-		<p>Hello there! I'm Newman, a University of Texas at Austin student majoring in <a href="#second" class="smoothScroll">Economics</a> and <a href="#third" class="smoothScroll">Psychology</a>. I will be graduating in May 2015 with a Bachelor of Arts in both fields. I have a deep interest in human behavior, especially regarding microeconomic consumer choice. I love chatting with people about basically anything, so please feel free to email me or contact me!</p>
+		<p>Hello there! I'm Newman, a University of Texas at Austin student majoring in <a href="#economics" class="smoothScroll">Economics</a> and <a href="#psychology" class="smoothScroll">Psychology</a>. I will be graduating in May 2015 with a Bachelor of Arts in both fields. I have a deep interest in human behavior, especially regarding microeconomic consumer choice. I love chatting with people about basically anything, so please feel free to <a href="mailto:newman.liu@utexas.edu">email me</a> or contact me!</p>
 	</div>
 
 	<div class="second">
@@ -148,7 +154,7 @@
 	</div>
 
 	<div class="fifth">
-		<a name="fifth">
+		<a name="contact">
 		<h3>Contact Me</h3>
 		<input type="email" placeholder="Your email">
 		<form method="post" action="mailto:newman.liu@utexas.edu" >
